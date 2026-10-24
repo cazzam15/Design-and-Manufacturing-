@@ -378,7 +378,7 @@ const FACTS=[
    ],
    [
     "Design factors",
-    "Function · Aesthetics · Ergonomics · Performance · Market · Economics · Materials · Manufacture · Safety · Sustainability"
+    "Function · Performance · Market · Aesthetics · Ergonomics<br/><b>Function:</b> primary &amp; secondary function · <b>Performance:</b> safety, maintenance, life expectancy, fitness for purpose · <b>Market:</b> target market, branding, technology push &amp; market pull"
    ],
    [
     "Ergonomics & anthropometrics",
@@ -386,7 +386,7 @@ const FACTS=[
    ],
    [
     "Modelling",
-    "Sketch models · Card/foam models · Mock-ups · Prototypes · 3D CAD models<br/>Used to test size, proportion, function and ergonomics before manufacture"
+    "Sketch models · Scale models · Block models · Computer-generated (3D CAD) models<br/>Used to generate &amp; explore, test &amp; refine, and communicate ideas — e.g. checking size, proportion, function and ergonomics before manufacture"
    ]
   ]
  },
@@ -395,23 +395,23 @@ const FACTS=[
   "cards": [
    [
     "Hardwoods",
-    "From deciduous (broad-leaved) trees · Slow growing, usually more expensive<br/>Oak · Beech · Ash · Mahogany · Teak"
+    "From broad-leaved (mostly deciduous) trees · Slow growing, usually more expensive<br/>Beech · Ash · Mahogany · Oak"
    ],
    [
     "Softwoods",
-    "From coniferous (evergreen) trees · Faster growing, cheaper<br/>Scots pine · Spruce · Larch · Cedar"
+    "From coniferous (cone-bearing, evergreen) trees · Faster growing, cheaper<br/>Red pine (Scots pine) · Spruce"
    ],
    [
     "Manufactured boards",
-    "Made from wood fibres, particles or veneers · Available in large stable sheets<br/>MDF · Plywood · Chipboard · Hardboard"
+    "Made from wood fibres, particles or veneers · Available in large stable sheets<br/>Plywood · Flexi-ply · MDF · Chipboard · Hardboard"
    ],
    [
     "Metals",
-    "<b>Ferrous</b> (contain iron, usually magnetic, can rust): mild steel, stainless steel, cast iron<br/><b>Non-ferrous</b>: aluminium, copper, brass<br/><b>Alloys</b>: mixtures, e.g. brass = copper + zinc"
+    "<b>Ferrous</b> (contain iron, usually magnetic; most rust unless protected — stainless steel resists corrosion): iron, cast iron, mild steel, high-carbon steel, stainless steel<br/><b>Non-ferrous</b> (no iron): aluminium, copper, brass<br/><b>Alloys</b>: mixtures of a metal with other elements, e.g. brass = copper + zinc, steel = iron + carbon"
    ],
    [
     "Plastics",
-    "<b>Thermoplastics</b> soften when reheated and can be reshaped: acrylic, HIPS, polypropylene, PVC<br/><b>Thermosetting</b> plastics set permanently: melamine formaldehyde, polyester resin, epoxy resin"
+    "<b>Thermoplastics</b> soften when reheated and can be reshaped: ABS, acrylic, polypropylene, polystyrene<br/><b>Thermosetting</b> plastics set permanently and cannot be reshaped by heating: urea formaldehyde, melamine formaldehyde"
    ],
    [
     "Key properties",
@@ -424,7 +424,7 @@ const FACTS=[
   "cards": [
    [
     "Measuring & marking out",
-    "Steel rule · Try square · Marking gauge · Scriber · Odd-leg calipers · Centre punch · Marking knife · Pencil"
+    "Rule · Try square · Engineer's square · Marking gauge · Mortise gauge · Scriber · Centre punch · Dividers · Callipers (outside &amp; odd-leg)"
    ],
    [
     "Wasting, shaping, forming",
@@ -432,11 +432,11 @@ const FACTS=[
    ],
    [
     "Joining methods",
-    "<b>Wood:</b> butt, dowel, mortise &amp; tenon, dovetail, housing joints<br/><b>Metal:</b> rivets, soldering, brazing, welding<br/><b>Temporary:</b> nuts &amp; bolts, screws, knock-down fittings"
+    "<b>Wood joints:</b> mortise &amp; tenon, lap, rub, halving, dowel, rebate, housing<br/><b>Adhesives:</b> PVA (wood), epoxy resin (mixed materials)<br/><b>Metal:</b> pop-riveting, welding<br/><b>Fixings:</b> screws, nails, nuts &amp; bolts · knock-down fittings and nuts &amp; bolts can be taken apart"
    ],
    [
     "Finishes",
-    "Protect the material and improve appearance<br/><b>Wood:</b> varnish, oil, paint, wax, stain<br/><b>Metal:</b> paint, powder coating, plastic dip coating, polishing<br/><b>Plastics:</b> usually self-finishing — edges polished"
+    "Protect the material and improve appearance<br/><b>Wood:</b> varnish, oil, paint, wax, stain<br/><b>Metal:</b> paint, lacquer, plastic dip-coating, polishing<br/>Prepare surfaces first by sanding/abrading<br/><b>Plastics:</b> usually self-finishing — edges polished"
    ]
   ]
  },
@@ -445,11 +445,11 @@ const FACTS=[
   "cards": [
    [
     "Scales of production",
-    "<b>One-off:</b> single bespoke item · <b>Batch:</b> set quantity, often using jigs &amp; templates · <b>Mass:</b> large numbers on a production line"
+    "<b>One-off:</b> single bespoke item, made by skilled workers · <b>Mass:</b> large numbers of identical products, often on an automated production line<br/>(The N5 course asks about one-off and mass; batch production is covered at Higher)"
    ],
    [
-    "Plastic processes",
-    "<b>Vacuum forming:</b> heated sheet pulled over a mould (trays, packaging)<br/><b>Injection moulding:</b> molten plastic forced into a mould (toys, casings)<br/><b>Blow moulding:</b> air inflates plastic in a mould (bottles)<br/><b>Extrusion:</b> continuous profiles (pipes, window frames)"
+    "Commercial processes",
+    "<b>Vacuum forming:</b> heated thermoplastic sheet sucked over a pattern by a vacuum — thin walls, draft angles, rounded corners (trays, packaging)<br/><b>Injection moulding:</b> molten plastic forced under pressure into a mould — ejector pin marks, sprue mark (casings, toys)<br/><b>Rotational moulding:</b> plastic powder in a heated mould rotated on two axes — hollow, seamless (traffic cones, kayaks)<br/><b>Sand casting:</b> molten metal poured into a sand mould made from a pattern — rough surface, split line<br/><b>Die casting:</b> molten metal forced under pressure into a steel die — smooth, detailed parts for mass production"
    ],
    [
     "CAD/CAM",
@@ -479,11 +479,11 @@ const EXAM_TIPS=[
  ],
  [
   "🏭",
-  "<strong>Know your processes</strong> — be able to describe vacuum forming, injection moulding and CAD/CAM step by step, with an example product."
+  "<strong>Know your processes</strong> — know the uses and identifying features of vacuum forming, injection moulding, rotational moulding, sand casting and die casting, plus the benefits and drawbacks of CAM, laser cutters and 3D printers."
  ],
  [
   "📊",
-  "<strong>Show your reasoning</strong> — for 2-mark questions, give two separate points. Watch for command words: \"describe\", \"explain\", \"state\"."
+  "<strong>Show your reasoning</strong> — for 2-mark questions, give two separate points. Watch for command words: \"state\", \"outline\", \"describe\", \"explain\"."
  ],
  [
   "⏱",
