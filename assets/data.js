@@ -364,7 +364,104 @@ const SHEETS=[
 ];
 
 // Key facts reference
-const FACTS=[];
+const FACTS=[
+ {
+  "h": "✏️ The Design Process",
+  "cards": [
+   [
+    "Design process stages",
+    "Brief → Analysis → Research → Specification → Ideas → Development → Modelling → Planning → Manufacture → Evaluation"
+   ],
+   [
+    "Design brief vs specification",
+    "<b>Brief:</b> short statement of the problem or need<br/><b>Specification:</b> detailed list of requirements the product must meet, used to evaluate ideas and the final product"
+   ],
+   [
+    "Design factors",
+    "Function · Aesthetics · Ergonomics · Performance · Market · Economics · Materials · Manufacture · Safety · Sustainability"
+   ],
+   [
+    "Ergonomics & anthropometrics",
+    "<b>Ergonomics:</b> how people interact with a product — comfort, safety, ease of use<br/><b>Anthropometrics:</b> body measurement data; designers often use the 5th–95th percentile range"
+   ],
+   [
+    "Modelling",
+    "Sketch models · Card/foam models · Mock-ups · Prototypes · 3D CAD models<br/>Used to test size, proportion, function and ergonomics before manufacture"
+   ]
+  ]
+ },
+ {
+  "h": "🪵 Materials & Properties",
+  "cards": [
+   [
+    "Hardwoods",
+    "From deciduous (broad-leaved) trees · Slow growing, usually more expensive<br/>Oak · Beech · Ash · Mahogany · Teak"
+   ],
+   [
+    "Softwoods",
+    "From coniferous (evergreen) trees · Faster growing, cheaper<br/>Scots pine · Spruce · Larch · Cedar"
+   ],
+   [
+    "Manufactured boards",
+    "Made from wood fibres, particles or veneers · Available in large stable sheets<br/>MDF · Plywood · Chipboard · Hardboard"
+   ],
+   [
+    "Metals",
+    "<b>Ferrous</b> (contain iron, usually magnetic, can rust): mild steel, stainless steel, cast iron<br/><b>Non-ferrous</b>: aluminium, copper, brass<br/><b>Alloys</b>: mixtures, e.g. brass = copper + zinc"
+   ],
+   [
+    "Plastics",
+    "<b>Thermoplastics</b> soften when reheated and can be reshaped: acrylic, HIPS, polypropylene, PVC<br/><b>Thermosetting</b> plastics set permanently: melamine formaldehyde, polyester resin, epoxy resin"
+   ],
+   [
+    "Key properties",
+    "Strength · Hardness · Toughness · Durability · Flexibility · Malleability · Ductility · Conductivity · Corrosion resistance"
+   ]
+  ]
+ },
+ {
+  "h": "🔧 Tools & Processes",
+  "cards": [
+   [
+    "Measuring & marking out",
+    "Steel rule · Try square · Marking gauge · Scriber · Odd-leg calipers · Centre punch · Marking knife · Pencil"
+   ],
+   [
+    "Wasting, shaping, forming",
+    "<b>Wasting:</b> removing material (sawing, drilling, filing, turning)<br/><b>Shaping/forming:</b> changing shape without removing material (bending, laminating, vacuum forming)"
+   ],
+   [
+    "Joining methods",
+    "<b>Wood:</b> butt, dowel, mortise &amp; tenon, dovetail, housing joints<br/><b>Metal:</b> rivets, soldering, brazing, welding<br/><b>Temporary:</b> nuts &amp; bolts, screws, knock-down fittings"
+   ],
+   [
+    "Finishes",
+    "Protect the material and improve appearance<br/><b>Wood:</b> varnish, oil, paint, wax, stain<br/><b>Metal:</b> paint, powder coating, plastic dip coating, polishing<br/><b>Plastics:</b> usually self-finishing — edges polished"
+   ]
+  ]
+ },
+ {
+  "h": "🏭 Commercial Manufacture",
+  "cards": [
+   [
+    "Scales of production",
+    "<b>One-off:</b> single bespoke item · <b>Batch:</b> set quantity, often using jigs &amp; templates · <b>Mass:</b> large numbers on a production line"
+   ],
+   [
+    "Plastic processes",
+    "<b>Vacuum forming:</b> heated sheet pulled over a mould (trays, packaging)<br/><b>Injection moulding:</b> molten plastic forced into a mould (toys, casings)<br/><b>Blow moulding:</b> air inflates plastic in a mould (bottles)<br/><b>Extrusion:</b> continuous profiles (pipes, window frames)"
+   ],
+   [
+    "CAD/CAM",
+    "Computer-Aided Design and Manufacture: laser cutters, CNC routers, 3D printers<br/>Accurate, repeatable, faster for complex shapes; set-up cost and skills needed"
+   ],
+   [
+    "Sustainability",
+    "Reduce · Reuse · Recycle · Repair · Rethink · Refuse<br/>Choose renewable or recycled materials, design for disassembly, reduce energy and waste"
+   ]
+  ]
+ }
+];
 
 // Mock exams: questions drawn at random from the whole bank, 1 mark each
 const MOCK_INTRO="Based on the SQA curriculum. Two sittings just like the real exam.<br/><strong>Paper 1:</strong> Short answers · 25 marks · 30 min | <strong>Paper 2:</strong> Extended · 25 marks · 40 min";
@@ -372,6 +469,18 @@ const MOCK_PAPERS=[{"key": "paper1", "title": "Paper 1 — Mixed Questions", "sh
 const MOCK_GRADES=[{"min": 85, "grade": "A", "msg": "Outstanding! An A-grade performance."}, {"min": 70, "grade": "B", "msg": "Well done! Review the questions you dropped to push for an A."}, {"min": 60, "grade": "C", "msg": "Good effort! Target your weakest topics to move up."}, {"min": 45, "grade": "D", "msg": "Keep revising — use Smart Mix to work on the topics you found hardest."}, {"min": 0, "grade": "No Award", "msg": "Don't give up! Review your answers, then try again."}];
 
 const EXAM_TIPS=[
+ [
+  "✏️",
+  "<strong>Use design vocabulary</strong> — name the design factor (function, aesthetics, ergonomics) and explain how it affects the product."
+ ],
+ [
+  "🪵",
+  "<strong>Justify material choices</strong> — name the specific material and give a property that makes it suitable, e.g. \"acrylic, because it is easily formed and needs no finish\"."
+ ],
+ [
+  "🏭",
+  "<strong>Know your processes</strong> — be able to describe vacuum forming, injection moulding and CAD/CAM step by step, with an example product."
+ ],
  [
   "📊",
   "<strong>Show your reasoning</strong> — for 2-mark questions, give two separate points. Watch for command words: \"describe\", \"explain\", \"state\"."
