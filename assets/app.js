@@ -77,10 +77,18 @@ function toast(msg){
 // Fill-in marking: forgiving on case, punctuation and small extras
 const norm=s=>String(s).toLowerCase().replace(/[^a-z0-9%\- ]/g,'').replace(/\s+/g,' ').trim();
 function fillCorrect(given,answer){
-  const v=norm(given),a=norm(answer);
+  // Numeric answers must match exactly: "100" must not be accepted for "10", or "13" for "3".
+  if(/^[\d.,\s£%-]+$/.test(String(answer).trim())){
+    const num=x=>parseFloat(String(x).replace(/[^\d.\-]/g,''));
+    return /\d/.test(String(given))&&num(given)===num(answer);
+  }
+  // Hyphens are optional: "non ferrous" and "nonferrous" both match "non-ferrous".
+  const hy=s=>norm(s).replace(/-/g,' ').replace(/\s+/g,' ').trim();
+  const v=hy(given),a=hy(answer);
   if(!v)return false;
-  if(v===a||v.includes(a))return true;
-  return a.includes(v)&&v.length>=Math.max(3,Math.ceil(a.length*0.5));
+  if(v===a||v.includes(a)||v.replace(/ /g,'')===a.replace(/ /g,''))return true;
+  // A shortened answer only counts if it is the start of the answer, so "ferrous" is not accepted for "non-ferrous".
+  return a.startsWith(v)&&v.length>=Math.max(3,Math.ceil(a.length*0.5));
 }
 
 // ---------------- Navigation ----------------
