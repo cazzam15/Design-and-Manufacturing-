@@ -375,8 +375,7 @@ function openWS(idx){
           let all=true;
           q.ids.forEach((id,i)=>{
             const inp=el.querySelector('[id="'+id+'"]');if(!inp)return;
-            const v=inp.value.trim().toLowerCase().replace(/[^a-z0-9\- ]/g,''),a=String(q.answers[i]).toLowerCase().replace(/[^a-z0-9\- ]/g,'');
-            const ok=!!v&&(v===a||v.includes(a)||(v.length>2&&(a.includes(v)||a.startsWith(v))));
+            const ok=fillCorrect(inp.value,q.answers[i]);
             inp.classList.add(ok?'is-ok':'is-no');inp.disabled=true;if(!ok)all=false;
           });
           wsFinish(el,all);
